@@ -1,0 +1,7 @@
+# Updated for Phoenix Flow - Intelligent Merchant Workstation
+name = "Phoenix Flow Extension"
+type = "theme"
+
+[theme]
+# This allows the extension to access and inject the Antigravity mobile fix
+# and the Schema Shield (JSON-LD) into the merchant's live theme.

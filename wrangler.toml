@@ -1,0 +1,17 @@
+name = "merchant-co-pilot-workstation"
+compatibility_date = "2026-02-04"
+compatibility_flags = ["nodejs_compat"] # Essential for Shopify adapters
+pages_build_output_dir = "build/client" # Matches your Remix build output
+
+[vars]
+# Ensure these match your Cloudflare Dashboard exactly
+SHOPIFY_API_KEY = "ea7d669014bc192a3d3587fe2baa34a2"
+APP_URL = "https://ironphoenixflow.com"
+# Critical: API Secret and Scopes should be stored as Secrets, but can be added here for testing
+SHOPIFY_API_SECRET = "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" 
+SCOPES = "read_products,write_products,write_content"
+
+[[kv_namespaces]]
+binding = "SESSION_KV"
+id = "7c01fdeb64894fe5bf693ca09503db95"
+
